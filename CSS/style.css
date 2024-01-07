@@ -52,6 +52,11 @@ span {
     color: #5cf0ff;
 }
 
+u {
+    text-decoration: none; 
+    border-bottom: 5px solid #5cf0ff; 
+}
+
 .logo-border {
     border: 7px solid #5cf0ff;
     box-shadow: none;
@@ -85,7 +90,7 @@ img {
 }
 
 .background-shadow {
-    background: #0000009c;
+    background: #0000009c !important;
 }
 
 th {
@@ -307,7 +312,7 @@ __________________________________________________________________ */
                             #banner
 __________________________________________________________________ */
 
-#banner h1 {
+/* #banner h1 {
     position: relative;
     bottom: 75vh;
     height: 0;
@@ -315,6 +320,16 @@ __________________________________________________________________ */
 
 #banner video {
     height: 90vh;
+} */
+
+#banner h1 {
+    position: relative;
+    bottom: 35rem;
+    height: 0;
+}
+
+#banner video {
+    height: 40rem;
 }
 
 /* _______________________________________________________________ 
@@ -475,6 +490,10 @@ __________________________________________________________________ */
 __________________________________________________________________ */
 
 @media (max-width:992px) {
+    #home p {
+        text-align:start;
+    }
+
     .web {
         display: none;
     }
@@ -483,8 +502,23 @@ __________________________________________________________________ */
         display: block;
     }
 
+    #banner h1 {
+        position: relative;
+        bottom: 20rem;
+        height: 0;
+        font-size: 1.5rem;
+    }
+    
+    #banner video {
+        height: 20rem;
+    }
+
     .img-animation-2 {
         animation: left-right 3s ease-in-out infinite;
+    }
+
+    #all-product img {
+        height: 300px;
     }
 
     @-webkit-keyframes left-right {
