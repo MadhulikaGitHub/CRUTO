@@ -1,0 +1,545 @@
+/* _______________________________________________________________ 
+
+                            General
+__________________________________________________________________ */
+
+body {
+    background-image: url(../Images/body-image.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+}
+
+button {
+    background-color: #5cf0ff !important;
+    color: #1a1a1a !important;
+    font-family: "Roboto", sans-serif !important;
+    font-size: medium !important;
+    font-weight: bold !important;
+    padding: 0.5rem 1rem !important;
+    border: 7px solid #5cf0ff !important;
+}
+
+input,
+textarea {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+    font-family: "Roboto", sans-serif !important;
+    font-size: medium !important;
+    border: 7px solid #5cf0ff !important;
+}
+
+button:hover {
+    background-color: #ffffff !important;
+}
+
+video {
+    object-fit: fill;
+    overflow: hidden;
+}
+
+a {
+    font-family: "Roboto", sans-serif !important;
+    color: #ffffff !important;
+}
+
+span {
+    color: #5cf0ff;
+}
+
+u {
+    text-decoration: none; 
+    border-bottom: 5px solid #5cf0ff; 
+}
+
+.logo-border {
+    border: 7px solid #5cf0ff;
+    box-shadow: none;
+}
+
+.icon-border {
+    /* border-top : 7px solid #f26f06;
+    border-right : 7px solid #f26280;
+    border-bottom : 7px solid #4a9ede;
+    border-left : 7px solid #1bd321; */
+
+    border: 7px solid #1a1a1a;
+}
+
+.icon-border-white {
+    border: 7px solid #ffffff;
+}
+
+img {
+    /* border: 1px solid #5cf0ff; */
+    box-shadow: 0px 0px 10px 10px #5cf0ff;
+}
+
+.img-decoration {
+    border: none;
+    box-shadow: none;
+}
+
+.white-shadow {
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+.background-shadow {
+    background: #0000009c !important;
+}
+
+th {
+    background: rgb(24, 24, 25) !important;
+    color: #ffffff !important;
+    border: 7px solid #5cf0ff !important;
+}
+
+.text-justify-paragraph {
+    text-align: justify;
+}
+
+.background-next {
+    background: rgb(24, 24, 25);
+}
+
+.img-animation-1 {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translate(50px);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.img-animation-2 {
+    animation: left-right 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes left-right {
+    0% {
+        transform: translate(0px);
+    }
+
+    25% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: translate(0px);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+.img-animation-left {
+    animation: left-move 1s ease-in-out;
+}
+
+@keyframes left-move {
+    0% {
+        transform: translate(-1000px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.img-animation-right {
+    animation: right-move 1s ease-in-out;
+}
+
+@keyframes right-move {
+    0% {
+        transform: translate(1000px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.img-animation-up {
+    animation: up-move 1s ease-in-out;
+}
+
+@keyframes up-move {
+    0% {
+        transform: translateY(1000px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+.img-animation-down {
+    animation: down-move 1s ease-in-out;
+}
+
+@keyframes down-move {
+    0% {
+        transform: translateY(-1000px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+.img-animation-zoom-in {
+    animation: zoom-in 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes zoom-in {
+    0% {
+        width: 80%;
+        height: 80%;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.img-animation-zoom-out {
+    animation: zoom-out 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes zoom-out {
+    0% {
+        width: 100%;
+        height: 100%;
+    }
+
+    100% {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.icon-animation-zoom-in {
+    animation: icon-zoom-in 1s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes icon-zoom-in {
+    0% {
+        width: 40px;
+        height: 40px;
+    }
+
+    100% {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.icon-animation-zoom-out {
+    animation: icon-zoom-out 1s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes icon-zoom-out {
+    0% {
+        width: 70px;
+        height: 70px;
+    }
+
+    100% {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.img-animation-flip-right {
+    animation: flip-right 5s ease-in-out alternate-reverse infinite both;
+}
+
+@keyframes flip-right {
+    0% {
+        transform: translate(0px);
+    }
+
+    25% {
+        transform: rotateY(180deg);
+    }
+
+    50% {
+        transform: translate(0px);
+    }
+
+    75% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+/* _______________________________________________________________ 
+
+                            #header
+__________________________________________________________________ */
+
+#header a:hover {
+    color: #1a1a1a !important;
+}
+
+#header li:hover {
+    background: #5cf0ff;
+    border-radius: 10%;
+}
+
+/* _______________________________________________________________ 
+
+                            #banner
+__________________________________________________________________ */
+
+/* #banner h1 {
+    position: relative;
+    bottom: 75vh;
+    height: 0;
+}
+
+#banner video {
+    height: 90vh;
+} */
+
+#banner h1 {
+    position: relative;
+    bottom: 35rem;
+    height: 0;
+}
+
+#banner video {
+    height: 40rem;
+}
+
+/* _______________________________________________________________ 
+
+                            #home
+__________________________________________________________________ */
+
+#home {
+    background: #0000009c;
+}
+
+#home p {
+    text-align: justify;
+}
+
+/* _______________________________________________________________ 
+
+        #about/ #about-part-1/ #about-part-2/ #about-part-3
+__________________________________________________________________ */
+
+#about-part-1 .card {
+    /* background-image: url(../Images/card-backgroung-image.jpeg); */
+    /* background-image: url(../Images/GIF/LED-BULBS-1.gif); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* border: 1px solid #5cf0ff; */
+    /* box-shadow: 0px 0px 10px 10px #5cf0ff; */
+}
+
+#about-part-1 .card {
+    box-shadow: 0px 0px 10px 10px #5cf0ff;
+    background-position: center;
+    background-size: cover;
+    animation: bg-card 1s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes bg-card {
+    0% {
+        background-image: url(../Images/GIF/LED-BULBS-1.gif);
+    }
+
+    100% {
+        background-image: url(../Images/card-backgroung-image.jpeg);
+    }
+}
+
+.card-shadow {
+    /* background: linear-gradient(45deg, black, transparent); */
+    background: linear-gradient(45deg, black, transparent);
+}
+
+#about-part-2,
+#about-part-3 {
+    /* background: rgb(20, 1, 1); */
+    /* background: rgb(12, 2, 38); */
+    background: rgb(24, 24, 25);
+}
+
+/* _______________________________________________________________ 
+
+                            #product
+__________________________________________________________________ */
+
+#product .card {
+    animation: color-theme 3s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes color-theme {
+    0% {
+        background: rgb(24, 24, 25);
+        /* border: 1px solid #5cf0ff; */
+        box-shadow: 0px 0px 10px 10px #5cf0ff;
+    }
+
+    100% {
+        /* background: rgb(11, 7, 75); */
+        background: #036aa0;
+        /* border: 1px solid #5cf0ff; */
+        box-shadow: 0px 0px 10px 10px #5cf0ff;
+    }
+}
+
+
+#product .carousel-inner {
+    box-shadow: 0px 0px 10px 10px #5cf0ff;
+}
+
+/* _______________________________________________________________ 
+
+                            #testimonial
+__________________________________________________________________ */
+
+#testimonial-part-2 {
+    background-image: url(../Images/WORLD-MAP.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+/* _______________________________________________________________ 
+
+                            #faq
+__________________________________________________________________ */
+
+#faq {
+    background: rgb(24, 24, 25);
+}
+
+/* _______________________________________________________________ 
+
+                            #contact
+__________________________________________________________________ */
+
+#contact .card {
+    box-shadow: 0px 0px 10px 10px #5cf0ff;
+    animation: bg-contact-card 3s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes bg-contact-card {
+    0% {
+        background: rgb(24, 24, 25);
+        
+    }
+
+    100% {
+        background: #036aa0;
+    }
+}
+
+.footer-logo {
+    width: 200px; 
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 10px 10px #5cf0ff;
+    animation: bg-contact-logo 3s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes bg-contact-logo {
+    0% {
+        background-image: url(../Images/Logo/CRUTO-LOGO-I-DARK.jpg);
+        
+    }
+
+    100% {
+        background-image: url(../Images/Logo/CRUTO-LOGO-LIGHT.jpg);
+    }
+}
+
+/* _______________________________________________________________ 
+
+                            Media Query
+__________________________________________________________________ */
+
+@media (max-width:992px) {
+    #home p {
+        text-align:start;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #banner h1 {
+        position: relative;
+        bottom: 20rem;
+        height: 0;
+        font-size: 1.5rem;
+    }
+    
+    #banner video {
+        height: 20rem;
+    }
+
+    .img-animation-2 {
+        animation: left-right 3s ease-in-out infinite;
+    }
+
+    #all-product img {
+        height: 300px;
+    }
+
+    @-webkit-keyframes left-right {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(180deg);
+        }
+
+        50% {
+            transform: rotate(0deg);
+        }
+
+        75% {
+            transform: rotate(-180deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
